@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(173, 173, 173);
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+
+.leftSection {
+  background-color: rgb(13, 50, 65);
+  grid-area: 1 / 1 / 21 / 5;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  color: white;
+  font-size: 1rem;
+  display: grid;
+}
+
+.firstList,
+.secondList {
+  display: grid;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.topSection {
+  background-color: rgb(85, 0, 57);
+  grid-area: 1 / 5 / 5 / 21;
+}
+
+.headerSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.headerSection > * {
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
+.bottomSection {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  grid-area: 5 / 5 / 21 / 21;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects > * {
+  width: 50%;
+  text-align: center;
+  color: orangered;
+}
+
+.history {
+  display: flex;
+  background-color: rgb(100, 100, 100);
+  width: 20rem;
+}
+
+.projectButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 50%;
+}
+
+a:visited {
+  color: orangered;
+  border: solid 1px orangered;
+}
+
+.testButtons {
+  columns: orangered;
+}
+
+button {
+  background-color: black;
+}
+
+.history {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.historyOne,
+.historyTwo {
+  margin-top: 50px;
+}
+
+h4 {
+  text-align: center;
+}
